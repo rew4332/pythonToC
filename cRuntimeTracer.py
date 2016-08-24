@@ -1,0 +1,26 @@
+from tensorflow.python import pywrap_tensorflow as tf
+class cRuntimeTracer(object):
+	self.timer.initGPU = 0;
+	self.timer.memcpyHostToDevice = 0;
+
+	def initGPU():
+		self.timer.initGPU = tf.timer.initGPU();
+	
+	def memcpyHostToDevice():
+		self.timer.memcpyHostToDevice += tf.timer.memcpyHostToDevice;
+	
+	"""
+	...
+	...
+	...
+	...
+	"""
+	def printStatus():
+		print "initGPU time				: "
+		print "memcpy Host To Device	: "
+		"""
+		...
+		...
+		...
+		...
+		"""
